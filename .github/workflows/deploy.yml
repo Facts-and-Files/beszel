@@ -44,6 +44,6 @@ jobs:
             echo "Docker updating service..."
             cd "$TARGET_DIR"
             docker compose pull || true
-            docker compose up -d --no-deps cantaloupe
+            docker compose up -d --no-deps beszel beszel-agent
 
             echo "Deployment complete."
