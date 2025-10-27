@@ -37,6 +37,9 @@ jobs:
             TOKEN=${{ secrets.BESZEL_TOKEN }}
             KEY=${{ secrets.BESZEL_KEY }}
             HUB_URL=${{ secrets.BESZEL_HUB_URL }}
+            VIRTUAL_HOST=${{ secrets.VIRTUAL_HOST }}
+            LETSENCRYPT_HOST=${{ secrets.LETSENCRYPT_HOST }}
+            LETSENCRYPT_EMAIL=${{ secrets.LETSENCRYPT_EMAIL }}
             EOF
 
             echo "Environment file written to $TARGET_DIR/.env"
