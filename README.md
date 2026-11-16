@@ -20,6 +20,24 @@ Add these to you .env and rebuild/restart the conainer:
 
 For further documentation see the official guide at https://beszel.dev/.
 
+## Updates
+
+### Hub
+
+The hub on Kali is docker based so just pull the new image.
+
+    docker compose pull
+
+Then rebuild/start the container.
+
+    $ docker compose up -d --build --force-recreate
+
+### Agent
+
+The binary agent on Lakshmi can be updated
+
+    # cd /opt/beszel-agent && ./beszel_agent update
+
 ## Deployment
 
 Deployment is done by Github actions.
